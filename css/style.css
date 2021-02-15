@@ -37,7 +37,7 @@ input, a, button {
       margin-bottom: 2vw;
       overflow: hidden; }
       .intro #wrap h1 span {
-        font: normal 6vw/1 "Open sans";
+        font: normal 4.5vw/1 "Open sans";
         color: #000;
         opacity: 0; }
     .intro #wrap h2 {
@@ -46,7 +46,7 @@ input, a, button {
       right: 0px;
       overflow: hidden; }
       .intro #wrap h2 span {
-        font: normal 2.2vw/1 "Open sans";
+        font: normal 1.8vw/1 "Open sans";
         color: #000;
         opacity: 0; }
   .intro #group {
