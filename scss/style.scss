@@ -1,3 +1,31 @@
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:wght@300&display=swap');
 @import "reset";
 
+.wrap {
+    width: 100%; height: 100vh; position: relative; 
+
+    #intro {
+        position: absolute; top: 30%; left: 50%; transform: translateX(-50%); 
+
+        h1 {
+           font: normal 6vw/1 "Open sans"; margin-bottom: 50px;
+        }
+
+        h2 {
+            font: normal 2.2vw/1 "Open sans"; position: absolute; right: 0%; 
+        }
+    }
+
+    #group {
+        position: absolute; bottom: 30%; left: 50%; transform: translateX(-50%);
+
+        li {
+            float: left;
+
+            a {
+                display: flex; justify-content: space-between; align-items: center;
+            }
+        }
+    }
+}
