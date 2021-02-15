@@ -34,16 +34,17 @@ input, a, button {
     transform: translateX(-50%); }
     .intro #wrap h1 {
       position: relative;
-      margin-bottom: 2vw; }
+      margin-bottom: 2vw;
+      overflow: hidden; }
       .intro #wrap h1 span {
         font: normal 6vw/1 "Open sans";
         color: #000;
         opacity: 1; }
     .intro #wrap h2 {
-      position: relative; }
+      display: inline-block;
+      position: relative;
+      overflow: hidden; }
       .intro #wrap h2 span {
-        position: absolute;
-        right: 0%;
         font: normal 2.2vw/1 "Open sans";
         color: #000;
         opacity: 1; }

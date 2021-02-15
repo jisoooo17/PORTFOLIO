@@ -9,7 +9,7 @@
         position: absolute; top: 25%; left: 50%; transform: translateX(-50%); 
 
         h1 {
-            position: relative; margin-bottom: 2vw;
+            position: relative; margin-bottom: 2vw; overflow: hidden;
 
             span {
                 font: normal 6vw/1 "Open sans";
@@ -19,10 +19,10 @@
         }
 
         h2 {
-            position: relative; 
+            display: inline-block; position: relative; overflow: hidden;
 
             span {
-                position: absolute;  right: 0%; font: normal 2.2vw/1 "Open sans"; color: #000;
+                font: normal 2.2vw/1 "Open sans"; color: #000;
                 opacity: 1; 
             }
         }
