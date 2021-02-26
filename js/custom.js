@@ -2,9 +2,11 @@ $(document).ready(function(){
 
     var tit1 = $(".intro #wrap h1");
     var tit2 = $(".intro #wrap h2");
+    var tit3 = $(".intro #wrap h3");
 
     sliding(tit1, 600 ,0);
     sliding(tit2, 600, 300);
+    sliding(tit3, 600, 300);
 
     setTimeout(up, 1200);
 

@@ -79,7 +79,7 @@ body {
         body .intro #group li:last-child {
           margin-right: 0px; }
         body .intro #group li a {
-          font: normal 1.4vw/1 "Open sans";
+          font: normal 1.4vw/1.4 "Open sans";
           color: #000; }
           body .intro #group li a::after {
             content: "";
@@ -104,6 +104,8 @@ body {
           transition-delay: 1.1s; }
         body .intro #group li:nth-of-type(4) {
           transition-delay: 1.3s; }
+        body .intro #group li:nth-of-type(5) {
+          transition-delay: 1.5s; }
         body .intro #group li.on {
           opacity: 1;
           transform: translateY(0px); }
