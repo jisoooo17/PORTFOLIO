@@ -6,6 +6,8 @@ $(document).ready(function(){
     sliding(tit1, 600 ,0);
     sliding(tit2, 600, 300);
 
+    setTimeout(up, 1200);
+
     function sliding(el, speed, delay){
         var bgColor = el.children("span").css("color");
 
@@ -23,6 +25,10 @@ $(document).ready(function(){
                 $(this).remove();
             })
         })
+    }
+
+    function up(){
+        $("#group li").addClass("on")
     }
  
 });
