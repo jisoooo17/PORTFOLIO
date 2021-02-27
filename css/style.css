@@ -138,6 +138,8 @@ body #profile {
       body #profile .inner .box3 > p {
         font: bold 16px/1 'Noto Sans KR', sans-serif;
         margin-bottom: 18px; }
+        body #profile .inner .box3 > p span {
+          margin-right: 10px; }
     body #profile .inner .box4 {
       position: absolute;
       top: 500px;
