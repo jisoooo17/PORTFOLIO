@@ -1,9 +1,10 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css2?family=Limelight&family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Limelight&family=Noto+Sans+KR:wght@100&family=Open+Sans:wght@300&display=swap');
 @import "reset";
+@import 'profile';
 
 body {
-    background: #fff; position: relative;
+    background: #efefef; position: relative;
 
     &::after {
         content: ""; display: block; width: 50%; height: 100%; position: absolute; top: 0px; right: 0px; background: #b0d7deb6; z-index: 1;
@@ -19,7 +20,7 @@ body {
                 position: relative; margin-bottom: 2vw; overflow: hidden;
     
                 span {
-                    font: normal 4.5vw/1 'Limelight', cursive;
+                    font: normal 70px/1 'Limelight', cursive;
                     color: #000;
                     opacity: 0;
                 }
@@ -29,7 +30,7 @@ body {
                 display: inline-block; position: absolute; right: 0px; overflow: hidden;
     
                 span {
-                    font: normal 1.8vw/1 "Open sans"; color: #000;
+                    font: normal 24px/1 "Open sans"; color: #000;
                     opacity: 0; 
                 }
             }
@@ -46,7 +47,7 @@ body {
                 }
     
                 a {
-                    font: normal 1.4vw/1.4 "Open sans"; color: #000;    
+                    font: normal 20px/1.4 "Open sans"; color: #000;    
                     
                     &::after {
                         content: ""; display: block; width: 0%; height: 1px; position: absolute; bottom: -22px; left: 0px; background: #000; margin: 20px auto; opacity: 0; transition: 0.5s;

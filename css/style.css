@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Limelight&family=Open+Sans:wght@300&display=swap");
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Limelight&family=Noto+Sans+KR:wght@100&family=Open+Sans:wght@300&display=swap");
 * {
   margin: 0px;
   padding: 0px; }
@@ -23,8 +24,147 @@ input, a, button {
   top: -9999px;
   opacity: 0; }
 
-body {
+body #header {
+  width: 100%;
+  padding: 33px 0px;
   background: #fff;
+  position: absolute;
+  z-index: 3; }
+  body #header .inner {
+    margin: 0px auto; }
+    body #header .inner h1 a {
+      font: 25px/1 "Raleway";
+      color: #000;
+      position: absolute;
+      bottom: 15px;
+      left: 2vw; }
+    body #header .inner h2 {
+      font: 20px/1 "Raleway";
+      color: #000;
+      float: right;
+      position: absolute;
+      bottom: 15px;
+      right: 2vw; }
+body #profile {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  z-index: 2; }
+  body #profile .inner {
+    width: 1180px;
+    margin: 0px auto;
+    padding: 100px 0px; }
+    body #profile .inner::after {
+      content: "";
+      display: block;
+      clear: both; }
+    body #profile .inner .pic {
+      width: 330px;
+      height: 400px;
+      background: url(../img/g06-05-김지수-72.jpg) no-repeat center/cover;
+      object-fit: cover;
+      margin-bottom: 50px;
+      margin-top: 80px; }
+    body #profile .inner .box1 {
+      position: absolute;
+      left: 570px;
+      top: 130px; }
+      body #profile .inner .box1 h1 {
+        font: bold 24px/1.5 'Noto Sans KR', sans-serif;
+        margin-bottom: 50px; }
+      body #profile .inner .box1 .wrap h2 {
+        display: inline-block;
+        font: bold 20px/1 "Raleway";
+        color: #000;
+        position: relative;
+        margin-bottom: 35px; }
+        body #profile .inner .box1 .wrap h2::after {
+          content: "";
+          display: block;
+          position: absolute;
+          bottom: -17px;
+          left: 0px;
+          width: 30px;
+          height: 1px;
+          background: #49b0b4; }
+      body #profile .inner .box1 .wrap > p {
+        font: bold 16px/1 'Noto Sans KR', sans-serif;
+        margin-bottom: 18px; }
+    body #profile .inner .box2 {
+      position: absolute;
+      top: 252px;
+      right: 220px; }
+      body #profile .inner .box2 h2 {
+        display: inline-block;
+        font: bold 20px/1 "Raleway";
+        color: #000;
+        position: relative;
+        margin-bottom: 35px; }
+        body #profile .inner .box2 h2::after {
+          content: "";
+          display: block;
+          position: absolute;
+          bottom: -17px;
+          left: 0px;
+          width: 30px;
+          height: 1px;
+          background: #49b0b4; }
+      body #profile .inner .box2 > p {
+        font: bold 16px/1 'Noto Sans KR', sans-serif;
+        margin-bottom: 18px; }
+        body #profile .inner .box2 > p:last-child {
+          margin-left: 69px; }
+        body #profile .inner .box2 > p span {
+          margin-right: 10px; }
+    body #profile .inner .box3 {
+      position: absolute;
+      top: 500px;
+      left: 570px; }
+      body #profile .inner .box3 h2 {
+        display: inline-block;
+        font: bold 20px/1 "Raleway";
+        color: #000;
+        position: relative;
+        margin-bottom: 35px; }
+        body #profile .inner .box3 h2::after {
+          content: "";
+          display: block;
+          position: absolute;
+          bottom: -17px;
+          left: 0px;
+          width: 30px;
+          height: 1px;
+          background: #49b0b4; }
+      body #profile .inner .box3 > p {
+        font: bold 16px/1 'Noto Sans KR', sans-serif;
+        margin-bottom: 18px; }
+    body #profile .inner .box4 {
+      position: absolute;
+      top: 500px;
+      right: 314px; }
+      body #profile .inner .box4 h2 {
+        display: inline-block;
+        font: bold 20px/1 "Raleway";
+        color: #000;
+        position: relative;
+        margin-bottom: 35px; }
+        body #profile .inner .box4 h2::after {
+          content: "";
+          display: block;
+          position: absolute;
+          bottom: -17px;
+          left: 0px;
+          width: 30px;
+          height: 1px;
+          background: #49b0b4; }
+      body #profile .inner .box4 > p {
+        font: bold 16px/1 'Noto Sans KR', sans-serif;
+        margin-bottom: 18px; }
+        body #profile .inner .box4 > p span {
+          margin-right: 10px; }
+
+body {
+  background: #efefef;
   position: relative; }
   body::after {
     content: "";
@@ -51,7 +191,7 @@ body {
         margin-bottom: 2vw;
         overflow: hidden; }
         body .intro #wrap h1 span {
-          font: normal 4.5vw/1 'Limelight', cursive;
+          font: normal 70px/1 'Limelight', cursive;
           color: #000;
           opacity: 0; }
       body .intro #wrap h2 {
@@ -60,7 +200,7 @@ body {
         right: 0px;
         overflow: hidden; }
         body .intro #wrap h2 span {
-          font: normal 1.8vw/1 "Open sans";
+          font: normal 24px/1 "Open sans";
           color: #000;
           opacity: 0; }
     body .intro #group {
@@ -79,7 +219,7 @@ body {
         body .intro #group li:last-child {
           margin-right: 0px; }
         body .intro #group li a {
-          font: normal 1.4vw/1.4 "Open sans";
+          font: normal 20px/1.4 "Open sans";
           color: #000; }
           body .intro #group li a::after {
             content: "";
