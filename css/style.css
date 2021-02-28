@@ -120,6 +120,8 @@ input, a, button {
       #profile .inner .box2 > p {
         font: bold 16px/1.5 'Noto Sans KR', sans-serif;
         margin-bottom: 18px; }
+      #profile .inner .box2 span {
+        margin-right: 10px; }
     #profile .inner .box3 {
       float: left;
       width: 380px; }
@@ -342,7 +344,7 @@ body {
   body .intro #wrap h2 span {
     font: normal 2.2vh/1 "Open sans"; }
   body .intro #group li {
-    margin-right: 3.5vh; }
+    margin-right: 4vh; }
     body .intro #group li a {
       font: normal 1.8vh/1.4 "Open sans"; } }
 
