@@ -16,27 +16,27 @@
 }
 
 #profile {
-    width: 100%; height: 100vh; position: relative; z-index: 2; 
+    width: 100%; height: 100vh; position: relative; z-index: 2;
 
     .inner {
-        width: 1180px; margin: 0px auto; padding: 140px 0px; 
+        width: 1180px; margin: 0px auto; padding: 140px 0px; position: relative;
         
         &::after {
             content: ""; display: block; clear: both;
         }
 
         .pic {
-            width: 330px; height: 400px; background: url(../img/g06-05-김지수-72.jpg) no-repeat center/cover; object-fit: cover; margin-bottom: 50px; margin-top: 80px; float: left; margin-right: 60px;
+            width: 350px; height: 420px; background: url(../img/g06-05-김지수-72.jpg) no-repeat center/cover; object-fit: cover; margin-bottom: 50px; margin-top: 80px;  margin-right: 20px;
         }
 
         .box1 {
-            float: left; 
+            width: 380px;  position: absolute; left: 400px; top: 150px;
 
             h1 {
                 font: bold 24px/1.5 'Noto Sans KR', sans-serif; margin-bottom: 50px;
             }
 
-            >div {
+            .wrap {
                 >h2 {
                     display:inline-block; font : bold 20px/1 "Raleway"; color: #000; position: relative; margin-bottom: 35px;
 
@@ -49,14 +49,26 @@
                     font: bold 16px/1 'Noto Sans KR', sans-serif; margin-bottom: 18px;
                 }
             }
+        }
 
-            .wrap {
-                margin-bottom: 100px;               
+        .box2 {
+           width: 380px; position: absolute; left: 400px; top: 550px;
+
+            >h2 {
+                display:inline-block; font : bold 20px/1 "Raleway"; color: #000; position: relative; margin-bottom: 35px;
+
+                &::after {
+                    content:  ""; display: block; position: absolute; bottom: -17px; left: 0px ; width: 30px; height: 1px; background: rgb(73, 176, 180);
+                }
+            }
+
+            >p {
+                font: bold 16px/1 'Noto Sans KR', sans-serif; margin-bottom: 18px;
             }
         }
         
-        .box2 {               
-            float: left; margin-top: 120px; margin-bottom: 50px;
+        .box3 {               
+            width: 380px;  position: absolute; right: 0px; top: 270px;
 
             h2 {
                 display:inline-block; font : bold 20px/1 "Raleway"; color: #000; position: relative; margin-bottom: 35px; 
@@ -74,8 +86,8 @@
                 }
             }
         }
-        .box3 {               
-            float: left ;
+        .box4 {               
+            width: 380px;  position: absolute;  right: 0px;  top: 550px;
 
             h2 {
                 display:inline-block; font : bold 20px/1 "Raleway"; color: #000; position: relative; margin-bottom: 35px; 
@@ -96,87 +108,96 @@
     }
 }
 
-@media screen and (max-width){
-  
-    
-    #profile {
-        width: 100%; height: 100vh; position: relative; z-index: 2; 
-    
-        .inner {
-            width: 1180px; margin: 0px auto; padding: 140px 0px; 
-            
-            &::after {
-                content: ""; display: block; clear: both;
+@media screen and (max-width : 1179px){
+   
+#profile {
+    .inner {
+        width: 100%; margin: 0px auto; padding: 140px 0px; position: relative;
+        
+        &::after {
+            content: ""; display: block; clear: both;
+        }
+
+        .pic {
+            width: 350px; height: 420px; background: url(../img/g06-05-김지수-72.jpg) no-repeat center/cover; object-fit: cover; margin-bottom: 50px; margin-top: 80px;  margin-right: 20px;
+        }
+
+        .box1 {
+            width: 380px;  position: absolute; left: 400px; top: 150px;
+
+            h1 {
+                font: bold 24px/1.5 'Noto Sans KR', sans-serif; margin-bottom: 50px;
             }
-    
-            .pic {
-                width: 330px; height: 400px; background: url(../img/g06-05-김지수-72.jpg) no-repeat center/cover; object-fit: cover; margin-bottom: 50px; margin-top: 80px; float: left; margin-right: 60px;
-            }
-    
-            .box1 {
-                float: left; 
-    
-                h1 {
-                    font: bold 24px/1.5 'Noto Sans KR', sans-serif; margin-bottom: 50px;
-                }
-    
-                >div {
-                    >h2 {
-                        display:inline-block; font : bold 20px/1 "Raleway"; color: #000; position: relative; margin-bottom: 35px;
-    
-                        &::after {
-                            content:  ""; display: block; position: absolute; bottom: -17px; left: 0px ; width: 30px; height: 1px; background: rgb(73, 176, 180);
-                        }
-                    }
-    
-                    >p {
-                        font: bold 16px/1 'Noto Sans KR', sans-serif; margin-bottom: 18px;
-                    }
-                }
-    
-                .wrap {
-                    margin-bottom: 100px;               
-                }
-            }
-            
-            .box2 {               
-                float: left; margin-top: 120px; margin-bottom: 50px;
-    
-                h2 {
-                    display:inline-block; font : bold 20px/1 "Raleway"; color: #000; position: relative; margin-bottom: 35px; 
-    
+
+            .wrap {
+                >h2 {
+                    display:inline-block; font : bold 20px/1 "Raleway"; color: #000; position: relative; margin-bottom: 35px;
+
                     &::after {
                         content:  ""; display: block; position: absolute; bottom: -17px; left: 0px ; width: 30px; height: 1px; background: rgb(73, 176, 180);
                     }
                 }
-    
+
                 >p {
                     font: bold 16px/1 'Noto Sans KR', sans-serif; margin-bottom: 18px;
-    
-                    span {
-                        margin-right: 10px;
-                    }
                 }
             }
-            .box3 {               
-                float: left ;
-    
-                h2 {
-                    display:inline-block; font : bold 20px/1 "Raleway"; color: #000; position: relative; margin-bottom: 35px; 
-    
-                    &::after {
-                        content:  ""; display: block; position: absolute; bottom: -17px; left: 0px ; width: 30px; height: 1px; background: rgb(73, 176, 180);
-                    }
+        }
+
+        .box2 {
+           width: 380px; position: absolute; left: 400px; top: 550px;
+
+            >h2 {
+                display:inline-block; font : bold 20px/1 "Raleway"; color: #000; position: relative; margin-bottom: 35px;
+
+                &::after {
+                    content:  ""; display: block; position: absolute; bottom: -17px; left: 0px ; width: 30px; height: 1px; background: rgb(73, 176, 180);
                 }
-    
-                >p {
-                    font: bold 16px/1 'Noto Sans KR', sans-serif; margin-bottom: 18px;
-    
-                    span {
-                        margin-right: 10px;
-                    }
+            }
+
+            >p {
+                font: bold 16px/1 'Noto Sans KR', sans-serif; margin-bottom: 18px;
+            }
+        }
+        
+        .box3 {               
+            width: 380px;  position: absolute; right: 0px; top: 270px;
+
+            h2 {
+                display:inline-block; font : bold 20px/1 "Raleway"; color: #000; position: relative; margin-bottom: 35px; 
+
+                &::after {
+                    content:  ""; display: block; position: absolute; bottom: -17px; left: 0px ; width: 30px; height: 1px; background: rgb(73, 176, 180);
+                }
+            }
+
+            >p {
+                font: bold 16px/1 'Noto Sans KR', sans-serif; margin-bottom: 18px;
+
+                span {
+                    margin-right: 10px;
+                }
+            }
+        }
+        .box4 {               
+            width: 380px;  position: absolute;  right: 0px;  top: 550px;
+
+            h2 {
+                display:inline-block; font : bold 20px/1 "Raleway"; color: #000; position: relative; margin-bottom: 35px; 
+
+                &::after {
+                    content:  ""; display: block; position: absolute; bottom: -17px; left: 0px ; width: 30px; height: 1px; background: rgb(73, 176, 180);
+                }
+            }
+
+            >p {
+                font: bold 16px/1 'Noto Sans KR', sans-serif; margin-bottom: 18px;
+
+                span {
+                    margin-right: 10px;
                 }
             }
         }
     }
+}
 }
