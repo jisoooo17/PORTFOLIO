@@ -75,4 +75,34 @@ body {
     }
 }
 
+@media screen and (max-width:539px) {
+    body {
+        
+        .intro {     
+            #wrap {       
+                h1 {
+                    span {
+                        font: 6vh/1 'Limelight', cursive;
+                    }
+                }
+                
+                h2 {
+                    span {
+                        font: normal 2.5vh/1 "Open sans"; 
+                    }
+                }
+            }
+        
+            #group {
+        
+                li {
+                    a {
+                        font: normal 2vh/1.4 "Open sans"; 
+                    }
+                }       
+            }
+        }
+    }
+}
+
 

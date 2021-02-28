@@ -311,4 +311,12 @@ body {
           opacity: 1;
           transform: translateY(0px); }
 
+@media screen and (max-width: 539px) {
+  body .intro #wrap h1 span {
+    font: 6vh/1 'Limelight', cursive; }
+  body .intro #wrap h2 span {
+    font: normal 2.5vh/1 "Open sans"; }
+  body .intro #group li a {
+    font: normal 2vh/1.4 "Open sans"; } }
+
 /*# sourceMappingURL=style.css.map */
