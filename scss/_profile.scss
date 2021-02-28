@@ -16,21 +16,21 @@
 }
 
 #profile {
-    width: 100%; height: 100vh; position: relative; z-index: 2;
+    width: 100%; height: 100vh; position: relative; z-index: 2; overflow: auto;
 
     .inner {
-        width: 1180px; margin: 0px auto; padding: 140px 0px; position: relative;
+        width: 1180px; margin: 0px auto; padding: 140px 0px; 
         
         &::after {
             content: ""; display: block; clear: both;
         }
 
         .pic {
-            float: left; width: 350px; height: 420px; background: url(../img/g06-05-김지수-72.jpg) no-repeat center/cover; object-fit: cover; margin-bottom: 50px; margin-top: 80px;  margin-right: 20px;
+            float: left; width: 350px; height: 450px; background: url(../img/g06-05-김지수-72.jpg) no-repeat center/cover; object-fit: cover; margin-bottom: 50px; margin-top: 80px;  margin-right: 70px;
         }
 
         .box1 {
-            float: left; width: 380px; height: 500px;; border: 1px solid red; 
+            float: left; width: 380px;height: 350px;  margin-bottom: 100px;
 
             h1 {
                 font: bold 24px/1.5 'Noto Sans KR', sans-serif; margin-bottom: 50px;
@@ -46,13 +46,13 @@
                 }
 
                 >p {
-                    font: bold 16px/1 'Noto Sans KR', sans-serif; margin-bottom: 18px;
+                    font: bold 16px/1.5 'Noto Sans KR', sans-serif; margin-bottom: 18px;
                 }
             }
         }
 
         .box2 {
-            float: left; width: 380px; height: 500px;; border: 1px solid red; 
+            float: right; width: 380px; height: 300px; margin-bottom: 30px; margin-top: 120px;
 
             >h2 {
                 display:inline-block; font : bold 20px/1 "Raleway"; color: #000; position: relative; margin-bottom: 35px;
@@ -63,12 +63,12 @@
             }
 
             >p {
-                font: bold 16px/1 'Noto Sans KR', sans-serif; margin-bottom: 18px;
+                font: bold 16px/1.5 'Noto Sans KR', sans-serif; margin-bottom: 18px;
             }
         }
         
         .box3 {               
-            float: left; width: 380px; height: 500px;; border: 1px solid red; 
+            float: left; width: 380px;
 
             h2 {
                 display:inline-block; font : bold 20px/1 "Raleway"; color: #000; position: relative; margin-bottom: 35px; 
@@ -79,7 +79,7 @@
             }
 
             >p {
-                font: bold 16px/1 'Noto Sans KR', sans-serif; margin-bottom: 18px;
+                font: bold 16px/1.5 'Noto Sans KR', sans-serif; margin-bottom: 18px;
 
                 span {
                     margin-right: 10px;
@@ -87,7 +87,7 @@
             }
         }
         .box4 {               
-            float: left; width: 380px; height: 500px;; border: 1px solid red; 
+            float: right; width: 380px;  
 
             h2 {
                 display:inline-block; font : bold 20px/1 "Raleway"; color: #000; position: relative; margin-bottom: 35px; 
@@ -98,7 +98,7 @@
             }
 
             >p {
-                font: bold 16px/1 'Noto Sans KR', sans-serif; margin-bottom: 18px;
+                font: bold 16px/1.5 'Noto Sans KR', sans-serif; margin-bottom: 18px;
 
                 span {
                     margin-right: 10px;
@@ -109,5 +109,72 @@
 }
 
 @media screen and (max-width : 1179px){
+    #profile {    
+        .inner {
+            width: 100%;padding: 100px 50px; 
+            
+            .pic {
+                float: left; width: 47%; height: 450px; margin-right: 4%;
+            }
+    
+            .box1 {
+                float: right; width: 47%;  margin-bottom: 0px; margin-top: 140px;
+                
+            }
+            
+            .box2 {
+                float: left; width: 49%;   margin-bottom: 40px; margin-top: 0px; margin-right: 2%;
+    
+            }
+            
+            .box3 {               
+                float: right; width: 47%; margin-bottom: 50px;
+    
+              
+            }
+            .box4 {               
+                float: right; width: 47%;  
+    
+            }
+            
+        }
+    }
+}
 
+@media screen and (max-width : 539px){
+    #profile {    
+        text-align: center;
+        
+        .inner {
+            width: 100%;padding: 100px 50px; 
+            
+            .pic {
+                width: 100%; height: 40vh; margin-right: 0%;
+            }
+    
+            .box1 {
+                width: 100%;  margin-bottom: 100px; margin-top: 0px;height: 50%; 
+
+                h1 {
+                    text-align: center;
+                }
+            }
+            
+            .box2 {
+                width: 100%;height: 50%; margin-bottom: 40px; margin-top: 0px; margin-right: 0%;
+    
+            }
+            
+            .box3 {               
+                width: 100%;height: 50%; margin-bottom: 40px;
+    
+              
+            }
+            .box4 {               
+                width: 100%;  height: 50%;
+    
+            }
+            
+        }
+    }
 }
