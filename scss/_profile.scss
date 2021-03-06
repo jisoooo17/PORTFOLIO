@@ -26,7 +26,7 @@
         }
 
         .pic {
-            float: left; width: 350px; height: 350px; background: url(../img/김지수2.jpg) no-repeat center/cover; object-fit: cover; margin-bottom: 50px; margin-top: 80px;  margin-right: 70px; border-radius: 50%;
+            float: left; width: 350px; height: 350px; background: url(../img/g06-05-김지수-72.jpg) no-repeat center/cover; object-fit: cover; margin-bottom: 50px; margin-top: 80px;  margin-right: 70px; border-radius: 50%;
         }
 
         .box1 {
@@ -115,28 +115,32 @@
 @media screen and (max-width : 1179px){
     #profile {    
         .inner {
-            width: 100%;padding: 100px 50px; 
+            width: 100%;padding: 70px 50px; 
             
             .pic {
-                float: left; width: 47%; height: 450px; margin-right: 4%;
+                float: left; width: 46%; height: 40vw; margin-right: 4%;
             }
     
             .box1 {
-                float: right; width: 47%;  margin-bottom: 0px; margin-top: 140px;
+                float: right; width: 45%;  margin-bottom: 10vh; margin-top: 120px;
+
+                h1 {
+                    font: bold 22px/1.5 'Noto Sans KR', sans-serif; margin-bottom: 50px;
+                }
             }
             
             .box2 {
-                float: left; width: 49%;   margin-bottom: 40px; margin-top: 0px; margin-right: 2%;
+                float: left; width: 49%; height: auto; margin-bottom: 140px; margin-top: 0px; margin-right: 2%;
     
             }
             
             .box3 {               
-                float: right; width: 47%; margin-bottom: 50px;
+                float: right; width: 45%; margin-bottom: 0px;
     
               
             }
             .box4 {               
-                float: right; width: 47%;  
+                float: right; width: 45%;  margin-top: 7vh;
     
             }
             
@@ -164,7 +168,7 @@
             width: 100%;padding: 50px; 
             
             .pic {
-                width: 100%; height: 40vh; margin-right: 0%;
+                width: 100%; height: 40vh; margin-right: 0%; border-radius: 0px;
             }
     
             .box1 {
