@@ -48,6 +48,10 @@ body {
     
                 a {
                     font: normal 20px/1.4 "Open sans"; color: #000;    
+
+                    &:nth-of-type(1) {
+                        letter-spacing: 2px;
+                    }
                     
                     &::after {
                         content: ""; display: block; width: 0%; height: 1px; position: absolute; bottom: -22px; left: 0px; background: #000; margin: 20px auto; opacity: 0; transition: 0.5s;
